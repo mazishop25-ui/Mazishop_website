@@ -1,0 +1,178 @@
+{
+  "identity": "E1 - The Anti-AI Designer",
+  "theme": "light",
+  "design_philosophy": {
+    "core_principles": [
+      "Fusion over Imitation: Mix organic warmth with swiss precision",
+      "Emotion First: Trust for sellers, Energy for delivery partners",
+      "Content is King: Storytelling over generic layouts",
+      "Negative Space: 2-3x standard spacing"
+    ],
+    "anti_patterns": [
+      "No generic 'Inter' for headings",
+      "No center-aligned text blocks (unless specific hero)",
+      "No full-screen gradients",
+      "No default 'Vercel' look"
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Outfit, sans-serif",
+      "body": "Plus Jakarta Sans, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "cdn_links": [
+      "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    ],
+    "rules": {
+      "headings": "font-bold tracking-tight text-slate-900",
+      "subheadings": "font-medium text-slate-600 tracking-wide uppercase text-sm",
+      "body": "text-slate-600 leading-relaxed",
+      "hero_text": "text-5xl md:text-7xl font-extrabold tracking-tighter"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#0F172A",
+        "foreground": "#F8FAFC",
+        "description": "Deep Slate - Authority & Trust"
+      },
+      "secondary": {
+        "DEFAULT": "#F97316",
+        "foreground": "#FFFFFF",
+        "description": "Vibrant Orange - Energy, Commerce, Indian Market Context"
+      },
+      "accent": {
+        "DEFAULT": "#3B82F6",
+        "foreground": "#FFFFFF",
+        "description": "Tech Blue - Clarity & Digital"
+      },
+      "background": {
+        "DEFAULT": "#FAFAF9",
+        "paper": "#FFFFFF",
+        "subtle": "#F5F5F4"
+      },
+      "muted": {
+        "DEFAULT": "#F1F5F9",
+        "foreground": "#64748B"
+      },
+      "border": "#E2E8F0"
+    },
+    "gradients": {
+      "hero_glow": "bg-gradient-to-tr from-orange-100/50 via-blue-50/30 to-transparent",
+      "glass_surface": "bg-white/70 backdrop-blur-xl border border-white/20 shadow-sm"
+    }
+  },
+  "layout_strategies": {
+    "spacing": {
+      "container_padding": "px-6 md:px-12 lg:px-24",
+      "section_gap": "py-24 md:py-32",
+      "element_gap": "gap-8 md:gap-12"
+    },
+    "grids": {
+      "bento_marketing": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6 md:gap-8",
+      "dashboard_dense": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4"
+    },
+    "containers": {
+      "marketing": "max-w-7xl mx-auto",
+      "dashboard": "max-w-[1600px] mx-auto"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-slate-900 text-white hover:bg-slate-800 rounded-full px-8 py-6 text-lg font-medium transition-all hover:scale-105 active:scale-95 shadow-lg shadow-slate-900/20",
+      "secondary": "bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 rounded-full px-8 py-6 text-lg font-medium transition-all hover:border-slate-300 shadow-sm",
+      "ghost": "text-slate-600 hover:text-slate-900 hover:bg-slate-100/50 rounded-full px-6 py-4"
+    },
+    "cards": {
+      "feature": "bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1",
+      "glass": "bg-white/60 backdrop-blur-md border border-white/40 shadow-xl rounded-2xl"
+    },
+    "inputs": {
+      "default": "h-12 bg-white border-slate-200 focus:border-orange-500 focus:ring-orange-500/20 rounded-xl transition-all"
+    }
+  },
+  "visual_assets": {
+    "images": {
+      "hero_collage": [
+        {
+          "url": "https://images.pexels.com/photos/4481256/pexels-photo-4481256.jpeg",
+          "alt": "Logistics team in warehouse",
+          "category": "hero_bg"
+        },
+        {
+          "url": "https://images.pexels.com/photos/4473351/pexels-photo-4473351.jpeg",
+          "alt": "Happy shopkeeper with tablet",
+          "category": "seller_hero"
+        }
+      ],
+      "delivery_partner": [
+        {
+          "url": "https://images.pexels.com/photos/4393245/pexels-photo-4393245.jpeg",
+          "alt": "Delivery partner with package",
+          "category": "delivery_hero"
+        },
+        {
+          "url": "https://images.pexels.com/photos/4604709/pexels-photo-4604709.jpeg",
+          "alt": "Delivery scooter",
+          "category": "delivery_context"
+        }
+      ],
+      "seller_onboarding": [
+        {
+          "url": "https://images.pexels.com/photos/4480797/pexels-photo-4480797.jpeg",
+          "alt": "Warehouse operations",
+          "category": "seller_features"
+        }
+      ],
+      "logo": "https://customer-assets.emergentagent.com/job_mazishop-landing/artifacts/rf8wfc2w_Logo.jpeg"
+    },
+    "icons": "lucide-react"
+  },
+  "motion": {
+    "library": "framer-motion",
+    "presets": {
+      "fade_up": {
+        "initial": { "opacity": 0, "y": 20 },
+        "whileInView": { "opacity": 1, "y": 0 },
+        "viewport": { "once": true },
+        "transition": { "duration": 0.5, "ease": "easeOut" }
+      },
+      "stagger_container": {
+        "hidden": { "opacity": 0 },
+        "show": {
+          "opacity": 1,
+          "transition": { "staggerChildren": 0.1 }
+        }
+      }
+    }
+  },
+  "page_specific_guidelines": {
+    "home": {
+      "strategy": "Trust & Scale. Use 'Bento' grid for features. Hero should be asymmetrical with strong value prop on left.",
+      "sections": ["Hero", "Trust Signals (Logos)", "How It Works (Tabs)", "Features Grid", "CTA"]
+    },
+    "seller_onboarding": {
+      "strategy": "Growth focused. Show success metrics. Use 'Organic' shapes in background.",
+      "sections": ["Hero Form", "Benefits", "Success Stories", "FAQ"]
+    },
+    "delivery_partner": {
+      "strategy": "High Energy. Use Orange accents heavily. Mobile-first layout.",
+      "sections": ["Hero Signup", "Earnings Calculator", "Perks", "Requirements"]
+    },
+    "admin_dashboard": {
+      "strategy": "Dense & Functional. Mode B Grid. White background, subtle borders.",
+      "sections": ["Stats Overview", "Leads Table", "Recent Activity"]
+    }
+  },
+  "universal_guidelines": [
+    "Do not use generic 'Inter' font.",
+    "Do not use full-screen gradients.",
+    "Use 2-3x more spacing than typical designs.",
+    "All interactive elements must have data-testid attributes.",
+    "Use 'sonner' for toasts.",
+    "Use 'lucide-react' for icons.",
+    "Ensure all text meets APCA contrast standards."
+  ]
+}
